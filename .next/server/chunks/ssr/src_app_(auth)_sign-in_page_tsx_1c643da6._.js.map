@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/myprojects/nextjs_project/chai_or_code/project_mongodb/mistrymess/src/app/%28auth%29/sign-in/page.tsx"],"sourcesContent":["'use client'\r\n\r\n\r\nimport { useSession, signIn, signOut } from \"next-auth/react\"\r\n\r\nexport default function Component() {\r\n  const { data: session } = useSession()\r\n  if (session) {\r\n    return (\r\n      <>\r\n        Signed in as {session.user.email} <br />\r\n        <button onClick={() => signOut()}>Sign out</button>\r\n      </>\r\n    )\r\n  }\r\n  return (\r\n    <>\r\n      Not signed in <br />\r\n      <button className=\"bg-orange-500 px-3 py-1 m-4 rounded\" onClick={() => signIn()}>Sign in</button>\r\n    </>\r\n  )\r\n}"],"names":[],"mappings":";;;;AAGA;AAHA;;;AAKe,SAAS;IACtB,MAAM,EAAE,MAAM,OAAO,EAAE,GAAG,CAAA,GAAA,8IAAA,CAAA,aAAU,AAAD;IACnC,IAAI,SAAS;QACX,qBACE;;gBAAE;gBACc,QAAQ,IAAI,CAAC,KAAK;gBAAC;8BAAC,8OAAC;;;;;8BACnC,8OAAC;oBAAO,SAAS,IAAM,CAAA,GAAA,8IAAA,CAAA,UAAO,AAAD;8BAAK;;;;;;;;IAGxC;IACA,qBACE;;YAAE;0BACc,8OAAC;;;;;0BACf,8OAAC;gBAAO,WAAU;gBAAsC,SAAS,IAAM,CAAA,GAAA,8IAAA,CAAA,SAAM,AAAD;0BAAK;;;;;;;;AAGvF","debugId":null}}]
+}
